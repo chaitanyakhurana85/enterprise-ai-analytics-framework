@@ -1,0 +1,41 @@
+domains:
+
+  retail:
+    enabled: true
+
+    dataset:
+      path: data/raw/retail_sales_sample.csv
+      format: csv
+
+    database:
+      table: retail_sales
+
+    required_columns:
+      - order_id
+      - order_date
+      - ship_date
+      - customer_id
+      - customer_name
+      - segment
+      - country
+      - city
+      - state
+      - region
+      - product_id
+      - category
+      - sub_category
+      - product_name
+      - sales
+      - quantity
+      - discount
+      - profit
+
+    date_columns:
+      - order_date
+      - ship_date
+
+    numeric_columns:
+      - sales
+      - quantity
+      - discount
+      - profit

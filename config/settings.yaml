@@ -1,0 +1,13 @@
+project:
+  name: Enterprise AI Analytics Framework
+  version: 1.0.0
+
+database:
+  type: duckdb
+  path: database/analytics.duckdb
+
+logging:
+  level: INFO
+
+framework:
+  active_domain: retail

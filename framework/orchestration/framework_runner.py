@@ -1,0 +1,25 @@
+from framework.configuration.config_manager import ConfigManager
+
+
+class FrameworkRunner:
+    """
+    Orchestrates the execution of the Enterprise AI Analytics Framework.
+    """
+
+    def __init__(self) -> None:
+        self.config = ConfigManager()
+        self.active_domain = self.config.get_active_domain()
+        self.domain_settings = self.config.get_domain_settings()
+
+    def run(self) -> None:
+        """
+        Runs the framework pipeline.
+        """
+
+        print("Enterprise AI Analytics Framework")
+        print("----------------------------------")
+        print(f"Active domain: {self.active_domain}")
+        print(f"Dataset path: {self.domain_settings['dataset']['path']}")
+        print(f"Database path: {self.config.get_database_path()}")
+        print("----------------------------------")
+        print("Pipeline status: initialized successfully")

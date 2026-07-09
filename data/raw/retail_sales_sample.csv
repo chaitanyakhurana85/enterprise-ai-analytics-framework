@@ -1,0 +1,6 @@
+order_id,order_date,ship_date,customer_id,customer_name,segment,country,city,state,region,product_id,category,sub_category,product_name,sales,quantity,discount,profit
+CA-1001,2026-01-03,2026-01-07,C001,John Smith,Consumer,United States,Los Angeles,California,West,P001,Furniture,Chairs,Office Chair,250.00,2,0.10,45.00
+CA-1002,2026-01-05,2026-01-09,C002,Sarah Lee,Corporate,United States,New York,New York,East,P002,Technology,Phones,Smartphone,900.00,1,0.00,180.00
+CA-1003,2026-01-08,2026-01-12,C003,Michael Brown,Home Office,United States,Chicago,Illinois,Central,P003,Office Supplies,Binders,File Binder,75.00,5,0.20,10.00
+CA-1004,2026-02-02,2026-02-06,C004,Emily Davis,Consumer,United States,Houston,Texas,South,P004,Technology,Accessories,Keyboard,120.00,3,0.05,30.00
+CA-1005,2026-02-10,2026-02-14,C005,David Wilson,Corporate,United States,Seattle,Washington,West,P005,Furniture,Tables,Office Table,600.00,1,0.15,90.00
