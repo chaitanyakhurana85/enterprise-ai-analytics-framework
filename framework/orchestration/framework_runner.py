@@ -1,4 +1,5 @@
-from framework.configuration.config_manager import ConfigManager
+from framework.configuration import ConfigManager
+from framework.pipeline import PipelineEngine
 
 
 class FrameworkRunner:
@@ -12,14 +13,15 @@ class FrameworkRunner:
         self.domain_settings = self.config.get_domain_settings()
 
     def run(self) -> None:
-        """
-        Runs the framework pipeline.
-        """
-
         print("Enterprise AI Analytics Framework")
         print("----------------------------------")
         print(f"Active domain: {self.active_domain}")
         print(f"Dataset path: {self.domain_settings['dataset']['path']}")
         print(f"Database path: {self.config.get_database_path()}")
         print("----------------------------------")
-        print("Pipeline status: initialized successfully")
+
+        pipeline = PipelineEngine(
+            active_domain=self.active_domain,
+            domain_settings=self.domain_settings,
+        )
+        pipeline.execute()
